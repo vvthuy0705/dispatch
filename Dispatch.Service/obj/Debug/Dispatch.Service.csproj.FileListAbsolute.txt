@@ -64,3 +64,37 @@ F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Service\obj\Debug\Dispatch.Service.csproj.CopyComplete
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Service\obj\Debug\TeduShop.Service.dll
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Service\obj\Debug\TeduShop.Service.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Service.dll.config
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Service.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Service.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EntityFramework.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TedShop.Data.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Tedu.Common.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Model.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\PdfSharp.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EPPlus.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\HtmlRenderer.PdfSharp.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\HtmlRenderer.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TedShop.Data.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TedShop.Data.dll.config
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Tedu.Common.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Tedu.Common.dll.config
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Model.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\TeduShop.Model.dll.config
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EntityFramework.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\PdfSharp.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\EPPlus.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\HtmlRenderer.PdfSharp.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\HtmlRenderer.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\obj\Debug\Dispatch.Service.csprojAssemblyReference.cache
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\obj\Debug\Dispatch.Service.csproj.CoreCompileInputs.cache
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\obj\Debug\Dispatch.Service.csproj.CopyComplete
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\obj\Debug\TeduShop.Service.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Service\obj\Debug\TeduShop.Service.pdb

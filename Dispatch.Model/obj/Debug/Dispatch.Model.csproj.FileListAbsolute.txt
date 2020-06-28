@@ -28,3 +28,19 @@ F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Model\obj\Debug\Dispatch.Model.csproj.CopyComplete
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Model\obj\Debug\TeduShop.Model.dll
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Model\obj\Debug\TeduShop.Model.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\TeduShop.Model.dll.config
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\TeduShop.Model.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\TeduShop.Model.pdb
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\EntityFramework.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\EntityFramework.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\obj\Debug\Dispatch.Model.csprojAssemblyReference.cache
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\obj\Debug\Dispatch.Model.csproj.CoreCompileInputs.cache
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\obj\Debug\Dispatch.Model.csproj.CopyComplete
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\obj\Debug\TeduShop.Model.dll
+C:\Users\MyLaptop\Documents\GitHub\dispatch-management\Dispatch.Model\obj\Debug\TeduShop.Model.pdb

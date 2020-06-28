@@ -1,0 +1,69 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Inport from excel</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" ui-sref="products" style="cursor:pointer">Products</li>
+                    <li class="breadcrumb-item active">Create New</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+
+    <div class="card card-info">
+        <div class="card-header">
+            <h3 class="card-title"> Add New Horizontal Form</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <!-- novalidate: không cho phép validate mặc định -->
+        <!-- ng-model: cơ chế bidding dữ liệu lên khai báo từ controller  -->
+        <form class="form-horizontal" novalidate name="frmImportProduct" role="form" >
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="    " class="col-sm-2 col-form-label">Choose file excel</label>
+                    <div class="col-sm-10">
+                        <input type="file" file-upload required name="file" placeholder="Name file">
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$invalid">Must enter file</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Parent Category</label>
+                    <div class="col-sm-10">
+                        <!-- "option.ID as option.Name ": đây là cách bidding dựa vào ID để hiện lên Name của ID đó , parentCategory: là biến trong scope-->
+                        <select name="parentId" class="form-control" ng-model="categoryId" ng-options="option.ID as option.Name for option in parentCategories">
+                            <option value="">Chọn danh mục</option>
+                        </select>
+                        <input type="hidden" name="categoryId" ng-model="categoryId">
+
+                        <!--<ui-select ng-model="product.Category" name="parentID" theme="boostrap" style="min-width:300px" title="Choose category">
+                            <ui-select-match placeholder="please choose category">{{$select.selected.Name}}</ui-select-match>
+                            <ui-select-choices repeat="item.ID as item in productCategories|filter:$select.search">
+                                <div ng-bind-html="item.Name | highlight: $select.search"></div>
+                                <small>
+                                    Name category:{{item.Name}}
+                                </small>
+                            </ui-select-choices>
+                        </ui-select>
+                        <span ng-show="frmImportProduct.CategoryID.$invalid" class="has-error"> Must choose category</span>
+                        <input type="hidden" class="form-control" ng-model="product.ParentID">-->
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <button type="submit" ng-disabled="frmAddProduct.$invalid" ng-click="ImportProduct()" class="btn btn-info">Save</button>
+                <button class="btn btn-default float-right" ui-sref="products">Cancel</button>
+            </div>
+            <!-- /.card-footer -->
+        </form>
+    </div>
+</section>

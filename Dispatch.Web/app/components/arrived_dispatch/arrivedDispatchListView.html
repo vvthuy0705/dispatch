@@ -1,0 +1,121 @@
+﻿<!-- Content Wrapper. Contains page content -->
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 style="font-weight:bold;">CÔNG VĂN ĐẾN</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Công Văn</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<!-- Main content -->
+<section class="content">
+
+    <!-- Default box -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Danh Sách Công Văn Đến</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" ng-model="keyword" placeholder="Search place ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" ng-click="searchProduct()" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- có thể dùng c1: ng-click="AddProductCatogory(), c2: ui-sref -->
+                    <button class="btn btn-success" ui-sref="add_arrivedDispatch"><i class="fa fa-plus"></i></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="text-align:center">
+                                        <!--<th style="width:10px">Gửi</th> -->>
+                                        <th>Mã</th>
+                                        <th>Nơi phát hành</th>
+                                        <th>Nơi nhận</th>
+                                        <th>Người ký</th>
+                                        <th>Người gửi</th>
+                                        <th>Kiểu tài liệu</th>
+                                        <th style="width:5%">Số công văn</th>
+                                        <th style="width:5%">Ngày phát hành</th>
+                                        <th style="width:10px">Trích yếu</th>
+                                        <th style="width:10px">File</th>
+                                        <th>Kiểu tài liệu</th>
+                                        <th style="width:10px">Tình trạng</th>
+                                        <th style="width:5%">Kết thúc</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- ng-repeat khai báo biến lặp  -->
+                                    <tr ng-repeat=" item in getProduct" style="text-align:center">
+                                        <td>{{item.noiPhatHanh}}</td>
+                                        <td>{{item.noiNhan}}</td>
+                                        <td>{{item.nguoiKy}}</td>
+                                        <td>{{item.nguoiKyNhay}}</td>
+                                        <td>{{item.nguoiGui}}</td>
+                                        <td>{{item.assetId}}</td>
+                                        <td>{{item.so}}</td>
+                                        <td>{{item.ngayPhatHanh}}</td>
+                                        <td>{{item.trichYeu}}</td>
+                                        <td>
+                                            <a class="btn btn-warning" href="{{urlDispatch}}{{item.data}}"><i class="fa fa-file-download"></i></a>
+                                        </td>
+                                        <td>{{item.linhVuc}}</td>
+                                        <!--<td><span ng-class="{'badge bg-red':item.statusProcess=='processing',' badge bg-green':item.statusProcess=='processed'}">{{item.statusProcess|statusProcess}}</span></td>-->
+                                        <td>{{item.ketThuc}}</td>
+                                        <!-- class="badge bg-danger" -->
+                                        <td>
+                                            <button class="btn btn-primary" style="font-size:13px;margin-top:2px" ui-sref="edit_arrivedDispatch({id:item.id})"><i class="fa fa-pencil-alt"></i> </button>
+                                            <button class="btn btn-danger" style="font-size:13px; margin-top:2px" ng-click="deleteProduct(item.id)"><i class="fa fa-trash"></i> </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div ng-if="loading" style="z-index:1">
+                                <div class="col-xs-4"></div>
+                                <div class="col-xs-4">
+                                    <i class="fa fa-refresh" aria-hidden="true"></i> <label class="label label-primary"> Đang tải....</label>
+                                </div>
+                                <div class="col-xs-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-footer-->
+        </div>
+    </div> 
+    <!-- /.card -->
+</section>
+<!-- /.content -->
+<!-- /.content-wrapper -->	

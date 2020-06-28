@@ -2,7 +2,7 @@
 
 
 (function () {
-    angular.module('dispatch', ['dispatch.dispatchAway','dispatch.history',
+    angular.module('dispatch', ['dispatch.dispatchAway', 'dispatch.arrivedDispatch','dispatch.history',
         'dispatch.common'])
         .config(config)
         .config(configAuthentication);

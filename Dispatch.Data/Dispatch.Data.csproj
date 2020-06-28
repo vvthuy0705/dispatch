@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA53E2F0-E758-4F6E-B9FD-3969685A0ADD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TedShop.Data</RootNamespace>
+    <AssemblyName>TedShop.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\DBFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\201909131545176_InitialDB.cs" />
+    <Compile Include="Migrations\201909131545176_InitialDB.Designer.cs">
+      <DependentUpon>201909131545176_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910080842565_AddErrorTable.cs" />
+    <Compile Include="Migrations\201910080842565_AddErrorTable.Designer.cs">
+      <DependentUpon>201910080842565_AddErrorTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910140351215_intergrate-AspnetIdentity.cs" />
+    <Compile Include="Migrations\201910140351215_intergrate-AspnetIdentity.Designer.cs">
+      <DependentUpon>201910140351215_intergrate-AspnetIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910150329414_Changkey.cs" />
+    <Compile Include="Migrations\201910150329414_Changkey.Designer.cs">
+      <DependentUpon>201910150329414_Changkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004080936095_Product.cs" />
+    <Compile Include="Migrations\202004080936095_Product.Designer.cs">
+      <DependentUpon>202004080936095_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004160952234_AddTagField.cs" />
+    <Compile Include="Migrations\202004160952234_AddTagField.Designer.cs">
+      <DependentUpon>202004160952234_AddTagField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004200913199_addColumnContent.cs" />
+    <Compile Include="Migrations\202004200913199_addColumnContent.Designer.cs">
+      <DependentUpon>202004200913199_addColumnContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004220757511_addQuantity.cs" />
+    <Compile Include="Migrations\202004220757511_addQuantity.Designer.cs">
+      <DependentUpon>202004220757511_addQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004230434209_addforenkey.cs" />
+    <Compile Include="Migrations\202004230434209_addforenkey.Designer.cs">
+      <DependentUpon>202004230434209_addforenkey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004241451030_contact.cs" />
+    <Compile Include="Migrations\202004241451030_contact.Designer.cs">
+      <DependentUpon>202004241451030_contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004250250395_addFeedbackModel.cs" />
+    <Compile Include="Migrations\202004250250395_addFeedbackModel.Designer.cs">
+      <DependentUpon>202004250250395_addFeedbackModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004290304146_addCustomerId.cs" />
+    <Compile Include="Migrations\202004290304146_addCustomerId.Designer.cs">
+      <DependentUpon>202004290304146_addCustomerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004291618256_renametableidentity.cs" />
+    <Compile Include="Migrations\202004291618256_renametableidentity.Designer.cs">
+      <DependentUpon>202004291618256_renametableidentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005040751354_addgroupuser.cs" />
+    <Compile Include="Migrations\202005040751354_addgroupuser.Designer.cs">
+      <DependentUpon>202005040751354_addgroupuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202005150821119_addOrin.cs" />
+    <Compile Include="Migrations\202005150821119_addOrin.Designer.cs">
+      <DependentUpon>202005150821119_addOrin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ApplicationGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleGroupRepository.cs" />
+    <Compile Include="Repositories\ApplicationRoleRepository.cs" />
+    <Compile Include="Repositories\ApplicationUserGroupRepository.cs" />
+    <Compile Include="Repositories\ContactDetailRepository.cs" />
+    <Compile Include="Repositories\ErrorRepository.cs" />
+    <Compile Include="Repositories\FeedbackRepository.cs" />
+    <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\SupportOnlineRepository.cs" />
+    <Compile Include="Repositories\SystemConfigRepository.cs" />
+    <Compile Include="Repositories\VisitorStatisticRepository.cs" />
+    <Compile Include="TeduShopDbContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dispatch.Common\Dispatch.Common.csproj">
+      <Project>{1d18f05e-8057-487c-8a72-90a8766dc551}</Project>
+      <Name>Dispatch.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dispatch.Model\Dispatch.Model.csproj">
+      <Project>{127c55bd-a88b-4933-8a0c-553eec3899ce}</Project>
+      <Name>Dispatch.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909131545176_InitialDB.resx">
+      <DependentUpon>201909131545176_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910080842565_AddErrorTable.resx">
+      <DependentUpon>201910080842565_AddErrorTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910140351215_intergrate-AspnetIdentity.resx">
+      <DependentUpon>201910140351215_intergrate-AspnetIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910150329414_Changkey.resx">
+      <DependentUpon>201910150329414_Changkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004080936095_Product.resx">
+      <DependentUpon>202004080936095_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004160952234_AddTagField.resx">
+      <DependentUpon>202004160952234_AddTagField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004200913199_addColumnContent.resx">
+      <DependentUpon>202004200913199_addColumnContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004220757511_addQuantity.resx">
+      <DependentUpon>202004220757511_addQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004230434209_addforenkey.resx">
+      <DependentUpon>202004230434209_addforenkey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004241451030_contact.resx">
+      <DependentUpon>202004241451030_contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004250250395_addFeedbackModel.resx">
+      <DependentUpon>202004250250395_addFeedbackModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004290304146_addCustomerId.resx">
+      <DependentUpon>202004290304146_addCustomerId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004291618256_renametableidentity.resx">
+      <DependentUpon>202004291618256_renametableidentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005040751354_addgroupuser.resx">
+      <DependentUpon>202005040751354_addgroupuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005150821119_addOrin.resx">
+      <DependentUpon>202005150821119_addOrin.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

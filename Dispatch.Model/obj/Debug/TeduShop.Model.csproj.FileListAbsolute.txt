@@ -1,0 +1,54 @@
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\TeduShop.Model.dll.config
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\TeduShop.Model.dll
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\TeduShop.Model.pdb
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\EntityFramework.dll
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\EntityFramework.xml
+E:\WEB .NET\TeduShop\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\WEB .NET\TeduShop\TeduShop.Model\obj\Debug\TeduShop.Model.csprojAssemblyReference.cache
+E:\WEB .NET\TeduShop\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CoreCompileInputs.cache
+E:\WEB .NET\TeduShop\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CopyComplete
+E:\WEB .NET\TeduShop\TeduShop.Model\obj\Debug\TeduShop.Model.dll
+E:\WEB .NET\TeduShop\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll.config
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.pdb
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.dll
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.xml
+E:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csprojAssemblyReference.cache
+E:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CoreCompileInputs.cache
+E:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CopyComplete
+E:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.dll
+E:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll.config
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.dll
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\TeduShop.Model.pdb
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.dll
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.xml
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\WEB .NET\Git\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csprojAssemblyReference.cache
+F:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CopyComplete
+F:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.dll
+F:\WEB .NET\Git\TeduShop.Model\obj\Debug\TeduShop.Model.pdb
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\TeduShop.Model.dll.config
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\TeduShop.Model.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\TeduShop.Model.pdb
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\EntityFramework.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\EntityFramework.xml
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\obj\Debug\TeduShop.Model.csprojAssemblyReference.cache
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\obj\Debug\TeduShop.Model.csproj.CopyComplete
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\obj\Debug\TeduShop.Model.dll
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\TeduShop.Model\obj\Debug\TeduShop.Model.pdb

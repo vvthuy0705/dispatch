@@ -1,0 +1,189 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>
+                    CÔNG VĂN :{{product.number}}
+                </h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" ui-sref="product-categories" style="cursor:pointer">Công Văn</li>
+                    <li class="breadcrumb-item active">Sửa công văn</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+
+    <div class="card card-info">
+        <div class="card-header">
+            <h3 class="card-title">SỬA CÔNG VĂN</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <!-- novalidate: không cho phép validate mặc định -->
+        <!-- ng-model: cơ chế bidding dữ liệu lên khai báo từ controller  -->
+        <form class="form-horizontal" novalidate name="frmUpdateProduct" role="form" >
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Mã công văn</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" required name="nameProduct" placeholder="ID" ng-model="product.id" disabled >
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$invalid"> Value not empty</label>
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$error.maxlength"> Less than 256 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Công văn số</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" required name="nameProduct" placeholder="số công văn" ng-model="product.number">
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$invalid"> Value not empty</label>
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$error.maxlength"> Less than 256 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nơi ban hành</label>
+                    <div class="col-sm-10">
+                        <select type="text" class="form-control" name="unitIssue" required ng-model="product.unitIssue" placeholder="Title SEO">
+                            <option>HV_KTQS</option>
+                            <option>HV_KTMM</option>
+                            <option>DH_QGHN</option>
+                            <option>HV_TAICHINH</option>
+                            <option>HV_BCVT</option>
+                        </select>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Số trang</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" required name="nameProduct" placeholder="số trang" ng-model="product.numberPage">
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$invalid"> Value not empty</label>
+                        <label class="error-content" ng-show="frmAddProduct.nameProduct.$error.maxlength"> Less than 256 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Lĩnh vực</label>
+                    <div class="col-sm-10">
+                        <select type="text" class="form-control" name="field" required ng-model="product.field" placeholder="Lĩnh vực">
+                            <option>chung_khoan</option>
+                            <option>doanh_nghiep</option>
+                            <option>giao_duc</option>
+                            <option>lao_dong</option>
+                            <option>tien_luong</option>
+                            <option>bao_hiem</option>
+                            <option>cntt</option>
+                            <option>tn_moi_truong</option>
+                            <option>van_tai</option>
+                            <option>ke_toan</option>
+                            <option>linh_vu_khac</option>
+                        </select>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Nội dung tóm tắt</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="description" style="height:76px" required ng-model="product.summaryContent" placeholder="Description" />
+                        <label class="has-error" ng-show="frmAddProduct.description.$error.maxlength">Less than 500 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Dữ liệu mã hóa</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="description" required ng-model="product.data" placeholder="Description" disabled>
+                        <label class="has-error" ng-show="frmAddProduct.description.$error.maxlength">Less than 500 characters</label>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Loại tài liệu</label>
+                    <div class="col-sm-10">
+                        <select type="text" class="form-control" name="field" required ng-model="product.documentType" placeholder="Lĩnh vực">
+                            <option>chi_thi</option>
+                            <option>hien_phap</option>
+                            <option>lenh</option>
+                            <option>luat</option>
+                            <option>nghi_dinh</option>
+                            <option>nghi_quyet</option>
+                            <option>phap_lenh</option>
+                            <option>quyet_dinh</option>
+                            <option>sac_lenh</option>
+                            <option>thong_tu</option>
+                        </select>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Tình trạng phê duyệt</label>
+                    <div class="col-sm-10">
+                        <select type="text" class="form-control" name="field" required ng-model="product.statusProcess" placeholder="trạng thái" disabled>
+                            <option>processing</option>
+                            <option>processed</option>
+                        </select>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Phòng ban nhận</label>
+                    <div class="col-sm-10">
+                        <select type="text" class="form-control" name="field" required ng-model="product.departmentRecived" placeholder="Lĩnh vực">
+                            <option>KH_CNTT</option>
+                            <option>KH_XD</option>
+                            <option>KH_TOAN</option>
+                            <option>KH_CDT</option>
+                            <option>KH_CK</option>
+                            <option>KH_HHVT</option>
+                            <option>ALL</option>
+                        </select>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProduct.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Người duyệt</label>
+                    <div class="col-sm-10">
+                        <!-- "option.ID as option.Name ": đây là cách bidding dựa vào ID để hiện lên Name của ID đó , parentCategory: là biến trong scope-->
+                        <select name="parentId" class="form-control" ng-model="product.approveBy" ng-options="option.id as option.fullName for option in listManagerUnit">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Người gửi</label>
+                    <div class="col-sm-10">
+                        <!-- "option.ID as option.Name ": đây là cách bidding dựa vào ID để hiện lên Name của ID đó , parentCategory: là biến trong scope-->
+                        <select name="parentId" class="form-control" ng-model="product.sender" ng-options="option.id as option.fullName for option in listClericalUnit">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Người ký</label>
+                    <div class="col-sm-10">
+                        <!-- "option.ID as option.Name ": đây là cách bidding dựa vào ID để hiện lên Name của ID đó , parentCategory: là biến trong scope-->
+                        <select name="parentId" class="form-control" ng-model="product.signer" ng-options="option.id as option.fullName for option in listManagerUnit">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <button type="submit" class="btn btn-info" ng-click="UpdateProduct()">Save</button>
+                <button type="submit" class="btn btn-default float-right" ui-sref="products">Cancel</button>
+            </div>
+            <!-- /.card-footer -->
+        </form>
+    </div>
+</section>

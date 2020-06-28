@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "ipfs@0.38.0-rc.1",
+      "destination": "Assets/admin/libs/ipfs/"
+    },
+    {
+      // validate form order
+      "library": "jquery-validate@1.19.1",
+      "destination": "Assets/admin/libs/jQuery-Validation/"
+    },
+    {
+      "library": "numeral.js@2.0.6",
+      "destination": "Assets/admin/libs/numeral/"
+    },
+    {
+      "library": "mustache.js@3.1.0",
+      "destination": "Assets/admin/libs/mustache/"
+
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "Assets/client/js/jqueryui/"
+    },
+    {
+      "library": "angular-local-storage@0.7.1",
+      "destination": "Assets/admin/libs/angular-local-storage/"
+    },
+    {
+      "library": "angular-loading-bar@0.9.0",
+      "destination": "Assets/admin/libs/angular-loading-bar/"
+    },
+    {
+      "library": "ng-ckeditor@0.2.1",
+      "destination": "Assets/admin/libs/ckeditor/"
+    },
+    {
+      "library": "angular-ui-router@1.0.25",
+      "destination": "Assets/admin/libs/angular-ui-router/"
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "Assets/admin/libs/toastr/"
+    },
+    {
+      "library": "bootbox.js@5.4.0",
+      "destination": "Assets/admin/libs/bootbox/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "ngbootbox@0.2.0",
+      "destination": "Assets/admin/libs/ngbootbox"
+    },
+    {
+      "provider": "unpkg",
+      "library": "ipfs-repo@2.0.0",
+      "destination": "Assets/admin/libs/ipfs-repo/"
+    }
+  ]
+}

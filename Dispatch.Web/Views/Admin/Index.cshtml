@@ -1,0 +1,92 @@
+﻿    
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Công Văn</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    @*<link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">*@
+    <link href="~/Scripts/plugins/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link href="~/Assets/admin/libs/toastr/toastr.css" rel="stylesheet" />
+    <link href="~/Assets/admin/libs/angular-loading-bar/loading-bar.css" rel="stylesheet" />
+    <link href="~/Assets/admin/css/adminlte.css" rel="stylesheet" />
+    <link href="~/Assets/admin/css/adminlte.min.css" rel="stylesheet" />
+    <link href="~/Scripts/plugins/icheck-bootstrap/icheck-bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini" ng-app="dispatch" ng-controller="rootController">
+    <div ui-view></div>
+    <!-- Site wrapper -->
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="~/Scripts/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/Scripts/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Assets/admin/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Assets/admin/js/demo.js"></script>
+    <!--thư viện đưa ra thông báo cho client-->
+    <script src="~/Assets/admin/libs/toastr/toastr.min.js"></script>
+    <!--Thư viện Angularjs-->
+    <script src="~/Assets/admin/libs/angular/angular.js"></script>
+    <!--Thư viện ui-router chứa các đối tượng trong angular thao tác với giao diện-->
+    <script src="~/Assets/admin/libs/angular-ui-router/angular-ui-router.js"></script>
+    <!--Thư viên comfirm để xóa bản ghi-->
+    <script src="~/Assets/admin/libs/bootbox/bootbox.js"></script>
+    <script src="~/Assets/admin/libs/ngbootbox/ngBootbox.js"></script>
+    <!--Thư viện chứa các editor cho soạn thảo văn bản-->
+    <script src="~/Assets/admin/libs/ng-ckeditor/ng-ckeditor.js"></script>
+    <script src="~/Assets/admin/libs/ckeditor/ckeditor.js"></script>
+    <!--thực hiện quản lý load file ảnh-->
+    <script src="~/Assets/admin/libs/ckfinder/ckfinder.js"></script>
+    <script src="~/Assets/admin/libs/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="~/Assets/admin/libs/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="~/Assets/admin/libs/angular-loading-bar/loading-bar.js"></script>
+
+    <script src="~/app/shared/modules/dispatch.common.js"></script>
+    <script src="~/app/shared/filter/statusFilter.js"></script>
+    <script src="~/app/shared/services/apiService.js"></script>
+    <script src="~/app/shared/services/notificationService.js"></script>
+    <script src="~/app/shared/services/commonService.js"></script>
+    <script src="~/app/shared/services/authData.js"></script>
+    <script src="~/app/shared/services/authenticationService.js"></script>
+    <script src="~/app/shared/services/loginService.js"></script>
+
+    <!--Module -->
+    <script src="~/app/components/dispatch_away/dispatchAway.module.js"></script>
+    <script src="~/app/shared/directives/pagerDirective.js"></script>
+    <script src="~/app/app.js"></script>
+    <!--Controller-->
+    <script src="~/app/components/home/rootController.js"></script>
+    <script src="~/app/components/dispatch_away/dispatchAwayListController.js"></script>
+    <script src="~/app/components/dispatch_away/dispatchAwayAddController.js"></script>
+    <script src="~/app/components/dispatch_away/dispatchAwayEditController.js"></script>
+    <script src="~/app/components/dispatch_away/dispatchAwayImportController.js"></script>
+    <script src="~/app/shared/directives/fileUpload.directive.js"></script>
+
+    <script src="~/app/components/home/homeController.js"></script>
+    <script src="~/app/components/login/loginController.js"></script>
+    <script src="~/app/shared/common/gethost.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="~/app/components/ipfs/ipfs.js"></script>
+    <script src="~/Assets/admin/libs/ipfs/index.min.js"></script>
+    <script src="~/Assets/admin/libs/ipfs-repo/dist/index.min.js"></script>
+    <script src="https://unpkg.com/ipfs-api/dist/index.min.js"></script>
+    <script src="~/app/components/dispatch_away/approveDispatchAwayListController.js"></script>
+    <script src="~/app/components/dispatch_away/sendDispatchAwayListController.js"></script>
+    <script src="~/app/components/history/history.module.js"></script>
+    <script src="~/app/components/history/historyTransactionListController.js"></script>
+
+</body>
+</html>

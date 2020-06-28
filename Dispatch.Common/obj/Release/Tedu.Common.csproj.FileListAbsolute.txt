@@ -1,0 +1,6 @@
+F:\WEB .NET\Git\Tedu.Common\bin\Release\Tedu.Common.dll
+F:\WEB .NET\Git\Tedu.Common\bin\Release\Tedu.Common.pdb
+F:\WEB .NET\Git\Tedu.Common\obj\Release\Tedu.Common.csprojAssemblyReference.cache
+F:\WEB .NET\Git\Tedu.Common\obj\Release\Tedu.Common.csproj.CoreCompileInputs.cache
+F:\WEB .NET\Git\Tedu.Common\obj\Release\Tedu.Common.dll
+F:\WEB .NET\Git\Tedu.Common\obj\Release\Tedu.Common.pdb

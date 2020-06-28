@@ -1,0 +1,53 @@
+﻿@model Dispatch.Web.Models.RegisterViewModel
+@using BotDetect.Web.Mvc;
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+@{
+    var SuccessMsg = ViewData["SucessMsg"];
+}
+<div class="register">
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken();// ngăn chặn submit nhiều lần
+        @Html.ValidationSummary(false, "", new { @class = "error" });//true: bỏ qua lỗi phát sinh , false : nhận tất
+        if (ViewData["SucessMsg"] != null)
+        {
+            <div class="alert alert-success error" role="alert">
+                <strong>@SuccessMsg</strong>
+            </div>
+        }
+
+        <div class="register-top-grid">
+            <h3>PERSONAL INFORMATION</h3>
+            <div class="mation">
+                <span>Full Name<label>*</label></span>
+                @Html.TextBoxFor(model => model.FullName)
+                <span>Email  <label>*</label></span>
+                @Html.TextBoxFor(model => model.Email)
+                <span>Address <label>*</label></span>
+                @Html.TextBoxFor(model => model.Address)
+                <span>Phone Number  <label>*</label></span>
+                @Html.TextBoxFor(model => model.PhoneNumber)
+                <span>Account<label>*</label></span>
+                @Html.TextBoxFor(model => model.UserName)
+                <span>Password<label>*</label></span>
+                @Html.PasswordFor(model => model.Pasword, new { @class = "register_shop" })
+
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+        @Html.Captcha(registerCaptcha)
+        @Html.TextBox("CaptchaCode")
+        <div class="register-but">
+            <input type="submit" value="submit">
+            <div class="clearfix"> </div>
+        </div>
+    }
+
+
+</div>

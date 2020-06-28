@@ -1,0 +1,112 @@
+﻿<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Create New Products Category</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item" ui-sref="product-categories" style="cursor:pointer">Products Category</li>
+                    <li class="breadcrumb-item active">Create New</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+
+    <div class="card card-info">
+        <div class="card-header">
+            <h3 class="card-title"> Add New Horizontal Form</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <!-- novalidate: không cho phép validate mặc định -->
+        <!-- ng-model: cơ chế bidding dữ liệu lên khai báo từ controller  -->
+        <form class="form-horizontal" novalidate name="frmAddProductCategory" role="form">
+            <div class="card-body">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Name Catedory</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" required name="nameProducrCategory" placeholder="Name" ng-model="productCategory.Name">
+                        <label class="error-content" ng-show="frmAddProductCategory.nameProducrCategory.$invalid"> Value not empty</label>
+                        <label class="error-content" ng-show="frmAddProductCategory.nameProducrCategory.$error.maxlength"> Less than 256 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Title SEO</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="alias" required ng-model="productCategory.Alias" placeholder="Title SEO">
+                        <label class="error-content" ng-show="frmAddProductCategory.alias.$error.maxlength">Less than 256 characters</label>
+                        <label class="error-content" ng-show="frmAddProductCategory.alias.$invalid">Value not empty</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="description" required ng-model="productCategory.Description" placeholder="Description">
+                        <label class="has-error" ng-show="frmAddProductCategory.description.$error.maxlength">Less than 500 characters</label>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Parent Category</label>
+                    <div class="col-sm-10">
+                        <!-- "option.ID as option.Name ": đây là cách bidding dựa vào ID để hiện lên Name của ID đó , parentCategory: là biến trong scope-->
+                        <select name="parentId" class="form-control" ng-model="productCategory.ParentID" ng-options="option.ID as option.Name for option in parentCategories">
+                        </select>
+                        <input type="hidden" class="form-control" ng-model="productCategory.ParentID">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Display Order</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" name="displayOrder" placeholder="Display order" ng-model="productCategory.DisplayOrder">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Image</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="image" class="form-control" ng-model="productCategory.Image">
+                        <button class="btn btn-default" type="button" ng-click="ChooseImage()">Select Image</button>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Meta Keyword</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="metaKeyWord" ng-model="productCategory.MetaKeyWord" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Meta Description</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" name="metaDescription" ckeditor="ckeditorOptions" ng-model="productCategory.MetaDescription" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <div class="checkbox">
+                            <!-- ng-checked="productCategory.Status": nếu là true thì nó sẽ check  -->
+                            <label class="form-check-label" for="exampleCheck2"><input type="checkbox" name="status" ng-model="productCategory.Status" ng-checked="productCategory.Status">Status</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <div class="checkbox">
+                            <input type="checkbox" name="homeFlag" ng-model="productCategory.HomeFlag" ng-checked="productCategory.HomeFlag">
+                            <label class="form-check-label" for="exampleCheck2">HomeFlag</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <button type="submit" ng-disabled="frmAddProductCategory.$invalid"  ng-click="AddProductCategory()" class="btn btn-info">Save</button>
+                <button class="btn btn-default float-right" ui-sref="product_categories">Cancel</button>
+            </div>
+            <!-- /.card-footer -->
+        </form>
+    </div>
+</section>

@@ -22,7 +22,7 @@
             }, function (error) {
                     var stateService = $injector.get('$state');
                     $scope.loading = false;
-                    stateService.go('home');
+                    //stateService.go('home');
                     notificationService.displayError('Account and password not falsed!');
 
             });

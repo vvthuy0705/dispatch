@@ -113,4 +113,4 @@
 
         $scope.search();
     }
-})(angular.module('tedushop.application_roles'));
+})(angular.module('dispatch.application_roles'));

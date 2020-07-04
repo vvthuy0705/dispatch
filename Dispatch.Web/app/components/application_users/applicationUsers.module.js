@@ -1,18 +1,20 @@
-﻿/// <reference path="/Assets/admin/libs/angular/angular.js" />
+﻿/// <reference path="../../../Assets/admin/libs/angular/angular.js" />
 
 (function () {
-    angular.module('tedushop.application_users', ['dispatch.common']).config(config);
+    angular.module('dispatch.application_users', ['dispatch.common']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
+
     function config($stateProvider, $urlRouterProvider) {
 
-        $stateProvider.state('application_users', {
-            url: "/application_users",
-            templateUrl: "/app/components/application_users/applicationUserListView.html",
-            parent: 'base',
-            controller: "applicationUserListController"
-        })
+        $stateProvider
+            .state('application_users', {
+                url: "/application_users",
+                templateUrl: "/app/components/application_users/applicationUserListView.html",
+                parent: 'base',
+                controller: "applicationUserListController"
+            })
             .state('add_application_user', {
                 url: "/add_application_user",
                 parent: 'base',

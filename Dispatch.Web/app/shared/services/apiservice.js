@@ -2,7 +2,7 @@
 (function (app) {
     app.factory('apiService', apiService);
 
-    apiService.$inject = ['$http', 'notificationService','authenticationService'];
+    apiService.$inject = ['$http', 'notificationService', 'authenticationService'];
 
     function apiService($http, notificationService, authenticationService) {
         // public phương thức bằng cách return 
@@ -10,37 +10,37 @@
             get: get,
             post: post,
             put: put,
-            del:del
+            del: del
         }
         function post(url, data, success, failure) {
             authenticationService.setHeader();
             $http.post(url, data).then(
                 function (result) {
-                success(result);
-            }, function (error) {
-                if (error.status == '401') {
-                    notificationService.displayError('Authenticate is requiered')
-                } else if (failure != null ) {
-                    failure(error);
-                    notificationService.displayError('Lỗi')
-                    notificationService.displayError(error)
-                }
-            });
+                    success(result);
+                }, function (error) {
+                    if (error.status == '401') {
+                        notificationService.displayError('Authenticate is requiered')
+                    } else if (failure != null) {
+                        failure(error);
+                        notificationService.displayError(error)
+                    }
+                });
         }
         function del(url, data, success, failure) {
             authenticationService.setHeader();
-            $http.delete(url, data).then(function (result) {
-                success(result);
-            }, function () {
-                if (error.status == '401') {
-                    notificationService.displayError('Authenticate is requiered')
-                } else if (failure != null) {
-                    failure(error);
-                }
-            });
+            $http.delete(url, data).then(
+                function (result) {
+                    success(result);
+                }, function (error) {
+                    if (error.status == '401') {
+                        notificationService.displayError('Authenticate is requiered')
+                    } else if (failure != null) {
+                        failure(error);
+                    }
+                });
         }
         function put(url, data, success, failure) {
-            authenticationService.setHeader();
+            //authenticationService.setHeader();
             $http.put(url, data).then(function (result) {
                 success(result);
             }, function (error) {
@@ -52,13 +52,12 @@
             });
         }
         function get(url, params, success, failure) {
-            //authenticationService.setHeader();
-            //console.log(params);
+            authenticationService.setHeader();
             $http.get(url, params).then(function (result) {
                 success(result);
             }, function (error) {
-                    failure(error);
-                    console.log(error);
+                failure(error);
+                console.log(error);
             });
         }
     }

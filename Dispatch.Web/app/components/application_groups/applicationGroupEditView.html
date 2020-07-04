@@ -1,48 +1,52 @@
-﻿<section class="content-header">
-    <h1>
-        Cập nhật nhóm
-    </h1>
-    <ol class="breadcrumb">
-        <li><a href="/admin"><i class="fa fa-dashboard"></i> Trang chủ</a></li>
-        <li><a ui-sref="categories">Danh mục nhóm</a></li>
-        <li class="active"><a href="#">Cập nhật</a></li>
-    </ol>
+﻿
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h3 class="box-title">Cập nhật group</h3>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item" ui-sref="product-categories" style="cursor:pointer">Danh mục nhóm</li>
+                    <li class="breadcrumb-item active">Cập nhật</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
 </section>
 <section class="content">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="box box-info">
-                <div class="box-header with-border">
-                    <h3 class="box-title">{{group.Name}}</h3>
-                </div><!-- /.box-header -->
-                <!-- form start -->
-                <form class="form-horizontal" role="form" novalidate name="frmUpdateAppGroup" ng-submit="updateApplicationGroup()">
-                    <div class="box-body">
-                        <div class="col-md-8">
-                            <div class="form-group" ng-class="{ 'has-error' : frmUpdateAppGroup.name.$invalid && !frmUpdateAppGroup.name.$pristine }">
-                                <label class="col-sm-2 control-label">Tên danh mục</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="name" class="form-control"
-                                           required reqired-message="Tên nhóm bắt buộc." ng-model="group.Name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <label ng-repeat="role in roles">
-                                        <input type="checkbox" checklist-model="group.Roles" checklist-value="role"> {{role.Description}}
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <a ui-sref="application_groups" class="btn btn-default">Hủy bỏ</a>
-                                    <input type="submit" ng-disabled="frmUpdateAppGroup.$invalid" class="btn btn-primary" value="Lưu lại" />
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.box-body -->
-                </form>
-            </div><!-- /.box -->
-        </div>
+
+    <div class="card card-info">
+        <!-- /.card-header -->
+        <!-- form start -->
+        <!-- novalidate: không cho phép validate mặc định -->
+        <!-- ng-model: cơ chế bidding dữ liệu lên khai báo từ controller  -->
+        <form class="form-horizontal" novalidate name="frmUpdateProduct" role="form">
+            <div class="card-body">
+                <div class="form-group" ng-class="{ 'has-error' : frmUpdateAppGroup.name.$invalid && !frmUpdateAppGroup.name.$pristine }">
+                    <label class="col-sm-2 control-label">Tên danh mục</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="name" class="form-control"
+                               required reqired-message="Tên nhóm bắt buộc." ng-model="group.Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <label ng-repeat="role in roles" style="margin-right:10px">
+                            <input type="checkbox" checklist-model="group.Roles" checklist-value="role"> {{role.Description}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                <button type="submit" class="btn btn-info" ng-click="updateApplicationGroup()">Lưu lại</button>
+                <a ui-sref="application_groups" class="btn btn-default">Hủy bỏ</a>
+            </div>
+            <!-- /.card-footer -->
+        </form>
     </div>
 </section>

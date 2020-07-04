@@ -10,6 +10,7 @@
     using System.Linq;
     using Dispatch.Common;
     using Dispatch.Model;
+    using Dispatch.Model.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Dispatch.Data.TeduShopDbContext>
     {
@@ -22,31 +23,31 @@
         {
             //This method will be called after migrating to the latest version.
 
-            CreateContactDetail(context);
-            //    var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new TeduShopDbContext()));
+            //CreateContactDetail(context);
+            //var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new TeduShopDbContext()));
 
-            //    var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(new TeduShopDbContext()));
+            //var roleManager = new RoleManager<ApplicationRole>(new RoleStore<ApplicationRole>(new TeduShopDbContext()));
 
-            //    var user = new ApplicationUser()
-            //    {
-            //        UserName = "npthao",
-            //        Email = "tedu.international@gmail.com",
-            //        EmailConfirmed = true,
-            //        BirthDay = DateTime.Now,
-            //        FullName = "Vu Van Thuy"
-            //    };
+            //var user = new ApplicationUser()
+            //{
+            //    UserName = "admin",
+            //    Email = "admin@gmail.com",
+            //    EmailConfirmed = true,
+            //    BirthDay = DateTime.Now,
+            //    FullName = "Vu Van Thuy"
+            //};
 
-            //    manager.Create(user, "123654$");
+            //manager.Create(user, "123qwe");
 
-            //    if (!roleManager.Roles.Any())
-            //    {
-            //        roleManager.Create(new IdentityRole { Name = "Admin" });
-            //        roleManager.Create(new IdentityRole { Name = "User" });
-            //    }
+            //if (!roleManager.Roles.Any())
+            //{
+            //    roleManager.Create(new ApplicationRole { Name = "Admin" });
+            //    roleManager.Create(new ApplicationRole { Name = "User" });
+            //}
 
-            //    var adminUser = manager.FindByName("tedu");
+            //var adminUser = manager.FindByName("admin");
 
-            //    manager.AddToRoles(adminUser.Id, new string[] { "Admin", "User" });
+            //manager.AddToRoles(adminUser.Id, new string[] { "Admin", "User" });
         }
 
         // site mới
@@ -60,41 +61,41 @@
         //}
     
 
-        private void CreateContactDetail(TeduShopDbContext context)
-        {
-            if (context.ContactDetails.Count() == 0)
-            {
-                try
-                {
-                    var contactDetail = new Dispatch.Model.ContactDetail()
-                    {
-                        Name = "Shop thời trang TEDU",
-                        Address = "Ngõ 195 Trần Cung",
-                        Email = "vvthuy@gmail.com",
-                        Lat = 21.0633645,
-                        Lng = 105.8053274,
-                        Phone = "095423233",
-                        Website = "http://tedu.com.vn",
-                        Other = "",
-                        Status = true
+        //private void CreateContactDetail(TeduShopDbContext context)
+        //{
+        //    if (context.ContactDetails.Count() == 0)
+        //    {
+        //        try
+        //        {
+        //            var contactDetail = new Dispatch.Model.ContactDetail()
+        //            {
+        //                Name = "Shop thời trang TEDU",
+        //                Address = "Ngõ 195 Trần Cung",
+        //                Email = "vvthuy@gmail.com",
+        //                Lat = 21.0633645,
+        //                Lng = 105.8053274,
+        //                Phone = "095423233",
+        //                Website = "http://tedu.com.vn",
+        //                Other = "",
+        //                Status = true
 
-                    };
-                    context.ContactDetails.Add(contactDetail);
-                    context.SaveChanges();
-                }
-                catch (DbEntityValidationException ex)
-                {
-                    foreach (var eve in ex.EntityValidationErrors)
-                    {
-                        Trace.WriteLine($"Entity of type \"{eve.Entry.Entity.GetType().Name}\" in state \"{eve.Entry.State}\" has the following validation error.");
-                        foreach (var ve in eve.ValidationErrors)
-                        {
-                            Trace.WriteLine($"- Property: \"{ve.PropertyName}\", Error: \"{ve.ErrorMessage}\"");
-                        }
-                    }
-                }
+        //            };
+        //            context.ContactDetails.Add(contactDetail);
+        //            context.SaveChanges();
+        //        }
+        //        catch (DbEntityValidationException ex)
+        //        {
+        //            foreach (var eve in ex.EntityValidationErrors)
+        //            {
+        //                Trace.WriteLine($"Entity of type \"{eve.Entry.Entity.GetType().Name}\" in state \"{eve.Entry.State}\" has the following validation error.");
+        //                foreach (var ve in eve.ValidationErrors)
+        //                {
+        //                    Trace.WriteLine($"- Property: \"{ve.PropertyName}\", Error: \"{ve.ErrorMessage}\"");
+        //                }
+        //            }
+        //        }
 
-            }
-        }
+        //    }
+        //}
     }
 }

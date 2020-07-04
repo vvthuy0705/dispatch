@@ -14,6 +14,7 @@ namespace Dispatch.Web.Models
         public string Email { set; get; }
         public string Password { set; get; }
         public string UserName { set; get; }
+        public string GroupName { set; get; }
 
         public string PhoneNumber { set; get; }
 

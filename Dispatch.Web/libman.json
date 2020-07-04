@@ -3,6 +3,10 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
+      "library": "checklist-model@1.0.0",
+      "destination": "Assets/admin/libs/checklistModel/"
+    },
+    {
       "library": "ipfs@0.38.0-rc.1",
       "destination": "Assets/admin/libs/ipfs/"
     },

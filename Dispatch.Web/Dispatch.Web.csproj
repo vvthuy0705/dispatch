@@ -302,6 +302,7 @@
     <Content Include="app\components\dispatch_away\dispatchAwayEditController.js" />
     <Content Include="app\components\dispatch_away\dispatchAwayAddController.js" />
     <Content Include="app\shared\common\gethost.js" />
+    <Content Include="app\shared\directives\asDateDirective.js" />
     <Content Include="app\shared\services\loginService.js" />
     <Content Include="app\shared\services\authenticationService.js" />
     <Content Include="app\shared\services\authData.js" />
@@ -3042,6 +3043,8 @@
     <Content Include="Assets\admin\libs\angular\version.txt" />
     <Content Include="Assets\admin\libs\bootbox\bootbox.js" />
     <Content Include="Assets\admin\libs\bootbox\bootbox.min.js" />
+    <Content Include="Assets\admin\libs\checklistModel\checklist-model.js" />
+    <Content Include="Assets\admin\libs\checklistModel\checklist-model.min.js" />
     <Content Include="Assets\admin\libs\ckeditor\.npm\assets\ckeditor4.png" />
     <Content Include="Assets\admin\libs\ckeditor\adapters\jquery.js" />
     <Content Include="Assets\admin\libs\ckeditor\ckeditor.js" />
@@ -7597,6 +7600,7 @@
     <Content Include="Assets\admin\libs\ipfs-repo\package.json" />
     <Content Include="Assets\admin\libs\ipfs-repo\README.md" />
     <Content Include="Assets\client\disptach\images\Thumbs.db" />
+    <Content Include="Assets\admin\libs\checklistModel\checklist-model.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
     <Content Include="Scripts\plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />

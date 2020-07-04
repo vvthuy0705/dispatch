@@ -18,6 +18,7 @@ namespace Dispatch.Model
         [MaxLength(256)]
         public string Address { get; set; }
         public DateTime? BirthDay { get; set; }
+        public string GroupName { get; set; }
 
         /// <summary> 
         /// tạo ra identity cho user

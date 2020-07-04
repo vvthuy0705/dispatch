@@ -47,4 +47,4 @@
         loadRoles();
         loadDetail();
     }
-})(angular.module('tedushop.application_groups'));
+})(angular.module('dispatch.application_groups'));

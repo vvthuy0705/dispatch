@@ -52,6 +52,7 @@ namespace Dispatch.Web.Infrastructure.Extensions
             appUser.Email = appUserViewModel.Email;
             appUser.UserName = appUserViewModel.UserName;
             appUser.PhoneNumber = appUserViewModel.PhoneNumber;
+            appUser.GroupName = appUserViewModel.GroupName;
         }
     }
 }

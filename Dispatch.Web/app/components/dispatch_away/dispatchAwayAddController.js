@@ -151,12 +151,6 @@
             }
 
         }
-
-       
-
-
-        
-
         // chạy khi controller khởi tạog
         loadListClericalUnit();
         loadListManagerUnit();

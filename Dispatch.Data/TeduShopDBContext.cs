@@ -10,7 +10,7 @@ namespace Dispatch.Data
     //thực thể và CSDL của bạn.DbContext là lớp chính chịu trách nhiệm cho việc tương tác với dữ liệu như là đối tượng
     public class TeduShopDbContext : IdentityDbContext<ApplicationUser>
     {
-        public TeduShopDbContext() : base("TeduShopConnection")
+        public TeduShopDbContext() : base("DispatchConection")
         {
             // ta load bảng cha không tự động load thêm bảng con nữa
             // Migration thực chất là để lưu vết mỗi lần sử đôi thông tin db

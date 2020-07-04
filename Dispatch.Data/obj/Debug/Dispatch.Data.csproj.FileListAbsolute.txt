@@ -90,3 +90,7 @@ F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\Dispatch.Data.csproj.CopyComplete
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\TedShop.Data.dll
 F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\TedShop.Data.pdb
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\Dispatch.Data.Migrations.AddBlogUrl.resources
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\Dispatch.Data.Migrations.adduser.resources
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\Dispatch.Data.Migrations.adduser1.resources
+F:\Semester MTA\Semester10\FINAL\Project Dispatch Management\Dispatch Management\Dispatch.Data\obj\Debug\Dispatch.Data.Migrations.addPropertyGroupName.resources

@@ -14,7 +14,7 @@
         $scope.clearSearch = clearSearch;
         $scope.deleteItem = deleteItem;
 
-        function deleteItem(id) {
+        function deleteItem(id,groupName) {
             $ngBootbox.confirm('Bạn có chắc muốn xóa?')
                 .then(function () {
                     var config = {
@@ -22,13 +22,25 @@
                             id: id
                         }
                     }
-                    apiService.del('/api/applicationUser/delete', config, function () {
-                        notificationService.displaySuccess('Đã xóa thành công.');
-                        search();
-                    },
-                    function () {
-                        notificationService.displayError('Xóa không thành công.');
-                    });
+                    apiService.del('/api/applicationUser/delete', config,
+                        function () {
+                            deleteUpdatePermission(id, groupName);
+                        },
+                        function (error) {
+                            console.log(error)
+                        });
+                });
+        }
+        function deleteUpdatePermission(id, permission) {
+            var url = 'http://' + hostlink + ':3000/api/' + permission + '/' + id;
+            apiService.del(url, null,
+                function () {
+                    notificationService.displaySuccess('Đã xóa thành công.');
+                    search();
+                },
+                function (error) {
+                    notificationService.displayError('Xóa không thành công.');
+                    console.log(error)
                 });
         }
         function search(page) {
@@ -38,7 +50,7 @@
             var config = {
                 params: {
                     page: page,
-                    pageSize: 10,
+                    pageSize: 1,
                     filter: $scope.filterExpression
                 }
             }
@@ -46,7 +58,10 @@
             apiService.get('api/applicationUser/getlistpaging', config, dataLoadCompleted, dataLoadFailed);
         }
 
+      
+
         function dataLoadCompleted(result) {
+            console.log(result);
             $scope.data = result.data.Items;
             $scope.page = result.data.Page;
             $scope.pagesCount = result.data.TotalPages;
@@ -68,4 +83,4 @@
 
         $scope.search();
     }
-})(angular.module('tedushop.application_users'));
+})(angular.module('dispatch.application_users'));

@@ -10,7 +10,6 @@
             ID: 0,
             Roles: []
         }
-        s
         $scope.addAppGroup = addApplicationGroup;
 
         function addApplicationGroup() {
@@ -39,4 +38,4 @@
 
         loadRoles();
     }
-})(angular.module('tedushop.application_groups'));
+})(angular.module('dispatch.application_groups'));

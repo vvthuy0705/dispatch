@@ -17,7 +17,7 @@ using Dispatch.Web.Models;
 
 namespace Dispatch.Web.Api
 {
-    //[Authorize]
+    [Authorize]
     [RoutePrefix("api/applicationUser")]
     public class ApplicationUserController : ApiControllerBase
     {
@@ -30,8 +30,7 @@ namespace Dispatch.Web.Api
             IApplicationGroupService appGroupService,
             IApplicationRoleService appRoleService,
             ApplicationUserManager userManager,
-            IErrorService errorService)
-            : base(errorService)
+            IErrorService errorService) : base(errorService)
         {
             _appRoleService = appRoleService;
             _appGroupService = appGroupService;
@@ -90,7 +89,7 @@ namespace Dispatch.Web.Api
 
         [HttpPost]
         [Route("add")]
-        //[Authorize(Roles = "AddUser")]
+        [Authorize(Roles = "ManagerUnit")]
         public async Task<HttpResponseMessage> Create(HttpRequestMessage request, ApplicationUserViewModel applicationUserViewModel)
         {
             if (ModelState.IsValid)
@@ -122,7 +121,7 @@ namespace Dispatch.Web.Api
                         _appGroupService.AddUserToGroups(listAppUserGroup, newAppUser.Id);
                         _appGroupService.Save();
 
-                        return request.CreateResponse(HttpStatusCode.OK, applicationUserViewModel);
+                        return request.CreateResponse(HttpStatusCode.OK, newAppUser);
                     }
                     else
                         return request.CreateErrorResponse(HttpStatusCode.BadRequest, string.Join(",", result.Errors));
@@ -144,7 +143,7 @@ namespace Dispatch.Web.Api
 
         [HttpPut]
         [Route("update")]
-        //[Authorize(Roles = "UpdateUser")]
+        [Authorize(Roles = "ManagerUnit")]
         public async Task<HttpResponseMessage> Update(HttpRequestMessage request, ApplicationUserViewModel applicationUserViewModel)
         {
             if (ModelState.IsValid)
@@ -170,11 +169,11 @@ namespace Dispatch.Web.Api
                             {
                                 await _userManager.RemoveFromRoleAsync(appUser.Id, role.Name);
                                 await _userManager.AddToRoleAsync(appUser.Id, role.Name);
-                            }
+                            }               
                         }
                         _appGroupService.AddUserToGroups(listAppUserGroup, applicationUserViewModel.Id);
                         _appGroupService.Save();
-                        return request.CreateResponse(HttpStatusCode.OK, applicationUserViewModel);
+                        return request.CreateResponse(HttpStatusCode.OK, appUser);
                     }
                     else
                         return request.CreateErrorResponse(HttpStatusCode.BadRequest, string.Join(",", result.Errors));
@@ -192,7 +191,7 @@ namespace Dispatch.Web.Api
 
         [HttpDelete]
         [Route("delete")]
-        //[Authorize(Roles = "DeleteUser")]
+        [Authorize(Roles = "ManagerUnit")]
         public async Task<HttpResponseMessage> Delete(HttpRequestMessage request, string id)
         {
             var appUser = await _userManager.FindByIdAsync(id);

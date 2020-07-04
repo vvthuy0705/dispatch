@@ -1,6 +1,6 @@
 ﻿
 (function () {
-    angular.module('tedushop.application_groups', ['dispatch.common']).config(config);
+    angular.module('dispatch.application_groups', ['dispatch.common']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 

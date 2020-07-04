@@ -2,7 +2,7 @@
 
 
 (function () {
-    angular.module('dispatch', ['dispatch.dispatchAway','dispatch.history',
+    angular.module('dispatch', ['dispatch.dispatchAway', 'dispatch.application_roles', 'dispatch.application_groups','dispatch.application_users','dispatch.history',
         'dispatch.common'])
         .config(config)
         .config(configAuthentication);

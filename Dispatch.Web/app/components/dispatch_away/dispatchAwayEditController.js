@@ -122,13 +122,13 @@
         $scope.approveAway = {
             dispatchAway:'',
             approveBy:'',
-            status:''
+            statusProcess:''
         }
 
         function ApproveDispatchAway() {
             $scope.approveAway.dispatchAway = 'resource:org.dispatch.network.DispatchAway#' + $scope.product.id;
             $scope.approveAway.approveBy = 'resource:org.dispatch.network.ManagerUnit#' + $scope.product.approveBy;
-            $scope.approveAway.status = 'processed';
+            $scope.approveAway.statusProcess = 'processed';
             apiService.post('http://' + hostlink + ':3000/api/ApproveDispatchAway/',
                 $scope.approveAway,
                 function (result) {
@@ -142,10 +142,6 @@
         }
         loadListClericalUnit();
         loadListManagerUnit();
-
-
         loadProductDetail();
     }
-
-
 })(angular.module('dispatch.dispatchAway'));
